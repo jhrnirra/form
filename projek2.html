@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pemesanan</title>
+</head>
+<body>
+    <h1>Formulir Pemesanan Kue</h1>
+    <p>Jelaskan Kue keinginan Anda dan kami akan membuatkannya.</p>
+    <form action="projek2(1).html">
+        <fieldset>
+            <label for="nama">Nama Anda</label>
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" required>
+            <br><br>
+            <label for="email">E-mail Anda</label>
+            <input type="text" name="email" id="email" placeholder="Email Pribadi"required>
+            <br><br>
+            <label for="kontak">Nomor Kontak</label>
+            <input type="kontak" name="kontak" id="kontak" placeholder="Kode Area-Nomor Telepon" required>
+            <br><br>
+            <label for="tanggal">Tanggal Dibutuhkan</label>
+            <input type="date" name="tanggal" id="tanggal" required>
+            <br><br>
+            <label for="ukuran">Ukuran Porsi</label>
+            <select name="ukuran" id="ukuran">
+                <option value="disable selected">Please Select</option>
+                <option value="small">Kecil</option>
+                <option value="medium">Sedang</option>
+                <option value="large">Besar</option>
+            </select>
+            <br><br>
+            <label for="rasa">Rasa</label>
+            <select name="rasa" id="rasa">
+                <option value="disable selected">Please Select</option>
+                <option value="coklat">Coklat</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="stroberi">Stroberi</option>
+            </select>
+            <br><br>
+            <label for="isian">Isian</label>
+            <select name="isian" id="isian">
+                <option value="disable selected">Please Select</option>
+                <option value="coklat">Coklat</option>
+                <option value="keju">Keju</option>
+                <option value="buah">Buah</option>
+            </select>
+            <br><br>
+            <label for="tema">Tema Kue</label>
+            <input type="text" name="tema" id="tema" placeholder="cth: Lucu,Sekolah, Pedesaan, TFF, Animasi" required>
+            <br><br>
+            <label for="biaya">Perkiraan Biaya</label>
+            <input type="number" name="biaya" id="biaya" placeholder="Rp." required>
+            <br><br>
+            <label for="lokasi">Lokasi Pengiriman (Kabupaten/Kota)</label>
+            <input type="text" name="lokasi" id="lokasi" placeholder="Alamat Lengkap" required>
+            <br><br>
+            <label for="gambar">Tambah Gambar (Desain/Model)</label>
+            <input type="file" name="gambar" id="gambar">
+            <br><br>
+            <label for="info">Informasi Tambahan</label>
+            <textarea name="info" id="info" rows="4" placeholder="Catatan Khusus"></textarea>
+           <br><br>
+           <label for="saran">Apakah Anda ingin kami memberikan saran desain tambahan berdasarkan tema Anda?</label>
+           <input type="radio" name="saran id="saran" value="ya"> <label for="ya">Ya</label>
+           <input type="radio" name="saran" id="saran" value="tidak"> <label for="tidak">Tidak</label>
+           <br><br>
+           <button type="submit">Kirim Formulir</button>
+        </fieldset>
+    </form>
+</body>
+</html>
