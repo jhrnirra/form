@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih</title>
+    <style>
+        body {
+            font-family: 'Lucida Handwriting', cursive, Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6iRk7_Le_1lNEoFlC3iDn6Tnk504OVpYFrTg5CoiAfT4B_nUE6Hz44o&s=1');
+            background-size: cover; /* Mengatur gambar agar menutupi seluruh layar */
+            background-position: center; /* Memposisikan gambar di tengah */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            position: relative; /* Menambahkan posisi relatif untuk elemen body */
+        }
+
+        .icon-container {
+            position: absolute;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .icon-container img {
+            width: 150px; /* Ukuran lingkaran besar */
+            height: 150px;
+            border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+            border: 5px solid white; /* Memberi border putih di sekitar lingkaran */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan */
+        }
+
+        .thank-you-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Latar belakang transparan untuk kontras */
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .thank-you-container h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+            color: #FFD700; /* Warna emas untuk teks utama */
+        }
+
+        .thank-you-container p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .thank-you-container button {
+            padding: 10px 20px;
+            background-color: #8B4513; /* Warna cokelat gelap untuk tombol */
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .thank-you-container button:hover {
+            background-color: #A0522D; /* Warna cokelat lebih terang saat di-hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="icon-container">
+        <img src="https://marketplace.canva.com/EAFNhIHcYPI/2/0/1600w/canva-logo-toko-roti-dan-kue-tradisional-ynyeC2yuTF0.jpg" alt="Logo Toko Roti">
+    </div>
+
+    <div class="thank-you-container">
+        <h1>TERIMA KASIH ATAS PESANAN ANDA</h1>
+        <p>Pesanan Anda telah kami terima. Kami akan segera memprosesnya dan menghubungi Anda untuk informasi lebih lanjut.</p>
+        <button onclick="window.location.href='projek2.html'">Kembali ke Formulir Pemesanan Kue</button>
+    </div>
+
+</body>
+</html>

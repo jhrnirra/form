@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Pesanan Kue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6iRk7_Le_1lNEoFlC3iDn6Tnk504OVpYFrTg5CoiAfT4B_nUE6Hz44o&s=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+            background-color: #444;
+            color: white;
+        }
+        
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .thank-you-message {
+            display: none;
+            background-color: #4CAF50;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Formulir Pemesanan Kue</h1>
+        <img src="https://marketplace.canva.com/EAFNhIHcYPI/2/0/1600w/canva-logo-toko-roti-dan-kue-tradisional-ynyeC2yuTF0.jpg" alt="Logo Toko Roti" class="logo">
+    </div>
+
+    <p>Jelaskan kue keinginan Anda dan kami akan membuatkannya.</p>
+    
+    <form id="orderForm" action="Ucapan Selamat.html" method="get">
+        <div class="form-nama">
+            <label for="nama">Nama Anda *</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+        </div>
+        
+        <div class="form-email">
+            <label for="email">E-mail Anda *</label>
+            <input type="email" id="email" name="email" placeholder="Email Pribadi" required>
+        </div>
+        
+        <div class="form-kontak">
+            <label for="kontak">Nomor Kontak Anda *</label>
+            <input type="text" id="kontak" name="kontak" placeholder="Kode Area - Nomor Telepon" required>
+        </div>
+        
+        <div class="form-tanggal">
+            <label for="tanggal">Tanggal Dibutuhkan *</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+        </div>
+
+        <div class="form-porsi">
+            <label for="ukuran-porsi">Ukuran Porsi *</label>
+            <select id="ukuran-porsi" name="ukuran-porsi" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value="small">Kecil/Small</option>
+                <option value="medium">Sedang/Medium</option>
+                <option value="large">Besar/Large</option>
+            </select>
+        </div>
+
+        <div class="form-rasa">
+            <label for="rasa">Rasa *</label>
+            <select id="rasa" name="rasa" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value="coklat">Coklat</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="stroberi">Stroberi</option>
+            </select>
+        </div>
+
+        <div class="form-isian">
+            <label for="isian">Isian *</label>
+            <select id="isian" name="isian" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value="coklat">Coklat Ceres</option>
+                <option value="keju">Keju Craft</option>
+                <option value="buah">Buah Mangga</option>
+            </select>
+        </div>
+
+        <div class="form-tema">
+            <label for="tema">Tema Kue *</label>
+            <input type="text" id="tema" name="tema" placeholder="cth: Lucu, Sekolah, Pedesaan, TFF, Animasi" required>
+        </div>
+
+        <div class="form-biaya">
+            <label for="biaya">Perkiraan Biaya *</label>
+            <input type="number" id="biaya" name="biaya" placeholder="Rp." required>
+        </div>
+
+        <div class="form-lokasi">
+            <label for="lokasi">Lokasi Pengiriman (Kabupaten/Kota) *</label>
+            <input type="text" id="lokasi" name="lokasi" placeholder="Alamat Lengkap" required>
+        </div>
+
+        <div class="form-gambar">
+            <label for="gambar">Tambah Gambar (Desain/Model)</label>
+            <input type="file" id="gambar" name="gambar">
+        </div>
+
+        <div class="form-informasi">
+            <label for="info-tambahan">Informasi Tambahan</label>
+            <textarea id="info-tambahan" name="info-tambahan" rows="4" placeholder="Catatan Khusus"></textarea>
+        </div>
+
+        <div class="form-saran">
+            <label>Apakah Anda ingin kami memberikan saran desain tambahan berdasarkan tema Anda?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="saran" value="ya"> Ya</label>
+                <label><input type="radio" name="saran" value="tidak"> Tidak</label>
+            </div>
+        </div>
+
+        <button type="submit">Kirim Formulir</button>
+        <button type="button" onclick="window.print()">Cetak Formulir</button>
+    </form>
+
+</body>
+</html>
